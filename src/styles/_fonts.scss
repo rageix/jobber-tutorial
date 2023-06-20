@@ -11,3 +11,35 @@ $fa-font-path: "/fonts/fontawesome6";
 @use "@fortawesome/fontawesome-free/scss/brands" with (
     $fa-font-path: $fa-font-path,
 );
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans:wght@400;700&family=Poppins:wght@400;700;800&display=swap');
+
+.courgette {
+    font-family: 'Courgette', cursive;
+    font-weight: 400;
+}
+
+.open-sans-regular {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.open-sans-bold {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.popping-regular {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.popping-bold {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.popping-extra-bold {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
