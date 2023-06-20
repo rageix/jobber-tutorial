@@ -1,9 +1,4 @@
 @use "bootstrap";
 @use "fonts";
 @use "body";
-
-.hello {
-  font-weight: bold;
-  font-size: 50px;
-  color: red;
-}
+@use "section1";
