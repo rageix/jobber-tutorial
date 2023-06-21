@@ -1,1 +1,12 @@
-@forward "bootstrap/scss/bootstrap";
+@forward "bootstrap/scss/bootstrap" with (
+$green: #1DBF73,
+);
+
+.btn-success {
+    color: #fff;
+
+    &:hover {
+        color: #fff;
+    }
+
+}
