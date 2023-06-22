@@ -1,0 +1,90 @@
+@use "fonts";
+
+.section6 {
+background: #0D084D;
+
+    .column-wrapper {
+        display: flex;
+        flex-direction: row;
+
+        .left {
+            width: 50%;
+
+            .business-logo {
+                display: flex;
+                flex-direction: row;
+
+                img {
+                    width: 11.875rem;
+                    height: auto;
+                }
+
+                .new-pill {
+                    @extend .popping-regular;
+                    background: #584AFF;
+                    color: #fff;
+                    height: 1.063rem;
+                    line-height: 1.063rem;
+                    font-size: 0.719rem;
+                    padding: 0 0.531rem;
+                    border-radius: 0.5315rem;
+                    margin-left: 0.281rem;
+                    margin-top: 0.156rem;
+                }
+
+            }
+
+            h2 {
+                color: #fff;
+                margin-top: 2.125rem;
+            }
+
+            .text {
+                color: #fff;
+                font-size: 1.094rem;
+                line-height: 1.594rem;
+                width: 25.938rem;
+                margin-top: 1.657rem;
+            }
+
+            .item-wrapper {
+                margin-top: 2.031rem;
+
+                .item {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-top: 0.781rem;
+
+                    i {
+                        font-size: 1.469rem;
+                        color: #7A7D85;
+                    }
+
+                    span {
+                        color: #fff;
+                        font-size: 1.094rem;
+                        margin-left: 0.75rem;
+                    }
+
+                }
+
+            }
+
+            .button-wrapper {
+                margin-top: 3.75rem;
+            }
+
+        }
+
+        .right {
+            width: 50%;
+
+            img {
+                border-radius: 0.25rem;
+            }
+
+        }
+
+    }
+}

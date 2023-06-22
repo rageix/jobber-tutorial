@@ -1,0 +1,139 @@
+@use "fonts";
+
+.section7 {
+
+    .carousel-wrapper {
+        position: relative;
+
+        .carousel-items {
+
+            .item {
+                display: flex;
+                flex-direction: row;
+
+                .video {
+                    max-width: 35rem;
+                    width: 100%;
+                    flex: 1 0 auto;
+                    border-radius: 0.25rem;
+                    overflow: hidden;
+                }
+
+                .content-wrapper {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0 4.344rem;
+
+                    .content-inner {
+                        max-width: 43.75rem;
+                        width: 100%;
+
+                        .top {
+                            display: flex;
+                            align-items: center;
+
+                            .name {
+                                color: #74767E;
+                                font-size: 1.094rem;
+                                border-right: #C5C6C9 solid 0.063rem;
+                                padding-right: 0.563rem;
+                            }
+
+                            .company {
+                                display: flex;
+                                align-items: center;
+
+                                img {
+                                    width: 0.813rem;
+                                    height: auto;
+                                    margin-left: 0.75rem;
+                                }
+
+                                span {
+                                    color: #252523;
+                                    font-size: 1.25rem;
+                                    margin-left: 0.625rem;
+                                }
+
+                            }
+
+                        }
+
+                        .bottom {
+                            @extend .courgette;
+                            color: #003912;
+                            font-size: 1.875rem;
+                            line-height: 2.781rem;
+                            margin-top: 1.687rem;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .logo-maker {
+        background: #456EE6;
+        padding: 2.344rem 4.75rem;
+        margin-top: 6rem;
+        position: relative;
+        overflow: hidden;
+
+        .content-wrapper {
+            color: #fff;
+            position: relative;
+            z-index: 2;
+
+            .logo {
+                width: 13.813rem;
+            }
+
+            .headline {
+                @extend .popping-bold;
+                font-size: 2rem;
+                line-height: 2.625rem;
+                margin-top: 1.188rem;
+                max-width: 23.281rem;
+                width: 100%;
+            }
+
+            .text {
+                font-size: 1.094rem;
+                margin-top: 1rem;
+            }
+
+            .button-wrapper {
+                margin-top: 1.469rem;
+
+                .btn {
+                    color: #456EE6;
+                }
+
+            }
+
+        }
+
+        .image-wrapper {
+            position: absolute;
+            z-index: 1;
+            right: 0;
+            top: 0;
+            height: 100%;
+
+            img {
+                height: 100%;
+                width: auto;
+            }
+
+        }
+
+    }
+
+
+}

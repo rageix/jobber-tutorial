@@ -1,0 +1,67 @@
+@use "fonts";
+
+.section4 {
+    background: #F1FDF7;
+
+    .column-wrapper {
+        display: flex;
+        flex-direction: row;
+
+        .left {
+            width: 50%;
+
+            .item-wrapper {
+                margin-top: 1.625rem;
+
+                .item {
+                    max-width: 27.5rem;
+                    width: 100%;
+                    margin-top: 1.563rem;
+
+                    .title {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+
+                        i {
+                            font-size: 1.469rem;
+                            color: #7A7D85;
+                        }
+
+                        span {
+                            @extend .popping-bold;
+                            margin-left: 0.75rem;
+                            font-size: 1.094rem;
+                            color: #404145;
+                        }
+
+                    }
+
+                    .description {
+                        margin-top: 0.469rem;
+                        font-size: 1.094rem;
+                        color: #7A7D85;
+                        line-height: 1.594rem;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            width: 50%;
+
+            img {
+                border-radius: 0.25rem;
+            }
+
+        }
+
+    }
+
+}

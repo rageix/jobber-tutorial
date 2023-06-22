@@ -6,40 +6,6 @@
         margin-top: 1.656rem;
         position: relative;
 
-        .carousel-nav {
-            width: 3.125rem;
-            height: 3.125rem;
-            background: #fff;
-            border-radius: 1.5625rem;
-            font-size: 1.125rem;
-            color: #555555;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow:  0px 0px 0.344rem 0px rgba(0, 0, 0, 0.15);
-            -webkit-box-shadow:  0px 0px 0.344rem 0px rgba(0, 0, 0, 0.15);
-            cursor: pointer;
-
-            &:hover {
-                background: darken(#fff, 10%);
-            }
-
-            &.left {
-                position: absolute;
-                top: 50%;
-                z-index: 5;
-                left: -1.5625rem;
-            }
-
-            &.right {
-                position: absolute;
-                top: 50%;
-                z-index: 5;
-                right: -1.5625rem;
-            }
-
-        }
-
         .carousel-items {
             display: flex;
             justify-content: space-between;

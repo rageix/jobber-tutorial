@@ -49,4 +49,36 @@ h2 {
     margin-bottom: 0;
 }
 
+.see-more-wrapper {
+    display: flex;
+    align-items: baseline;
+
+    h2 {
+        flex: 1 0 auto;
+    }
+
+    .see-more {
+        font-size: 1.031rem;
+        width: 100%;
+        display: flex;
+        justify-content: right;
+
+        a {
+            text-decoration-line: none;
+            color: #567CE9;
+            display: flex;
+            align-items: center;
+        }
+
+        .fa-chevron-right {
+            font-size: 0.625rem;
+            margin-left: 0.719rem;
+        }
+
+    }
+
+
+}
+
+
 

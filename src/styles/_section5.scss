@@ -1,0 +1,46 @@
+.section5 {
+
+    .item-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 0.906rem;
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-width: 9.5rem;
+            flex: 1 0 20%;
+            margin-top: 3.594rem;
+
+            .inner-wrapper {
+                display: flex;
+                justify-content: center;
+            }
+
+            .icon-wrapper {
+                width: 3rem;
+                border-bottom: 0.125rem solid #404145;
+                padding-bottom: 0.625rem;
+                text-align: center;
+
+                img {
+                    height: 2.406rem;
+                    width: auto;
+                }
+
+            }
+
+            .label {
+                margin-top: 0.437rem;
+                font-size: 0.969rem;
+                color: #404145;
+                text-align: center;
+            }
+
+        }
+
+    }
+
+}
