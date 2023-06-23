@@ -1,0 +1,90 @@
+@use "fonts";
+
+.section9 {
+
+    .item-wrapper {
+        margin-top: 1.688rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .item {
+            max-width: 27.844rem;
+
+            .image-wrapper {
+                border-radius: 0.25rem;
+                overflow: hidden;
+
+                img {
+                    height: 100%;
+                    width: auto;
+                }
+
+            }
+
+            .info {
+                margin-top: 0.844rem;
+
+                .title {
+                    @extend .open-sans-bold;
+                    font-size: 1.125rem;
+                    color: #1B1A1D;
+                }
+
+                .description {
+                    margin-top: 0.063rem;
+                    font-size: 0.969rem;
+                    color: #95979D;
+                    line-height: 1.563rem;
+                }
+
+            }
+
+        }
+
+    }
+
+    .within-reach {
+        position: relative;
+        background: #4D1324;
+        padding: 6.906rem 6.063rem;
+        margin-top: 6.125rem;
+
+        .inner-wrapper {
+            position: relative;
+            z-index: 2;
+
+            .text {
+                @extend .popping-bold;
+                font-size: 3rem;
+                color: #fff;
+
+            }
+
+            .button-wrapper {
+                margin-top: 2.063rem;
+
+                .btn {
+
+                }
+
+            }
+
+        }
+
+        .image-wrapper {
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            right: 6.75rem;
+
+            img {
+
+            }
+
+        }
+
+    }
+
+}
