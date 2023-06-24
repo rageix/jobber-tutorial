@@ -4,14 +4,9 @@
 .section9 {
 
     .item-wrapper {
-        margin-top: 1.688rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
 
         .item {
-            max-width: 27.844rem;
+            margin-top: 1.688rem;
 
             @include bootstrap.media-breakpoint-down(xl) {
                 flex-basis: 50%;
@@ -30,15 +25,8 @@
                 overflow: hidden;
 
                 img {
-                    height: 100%;
-                    width: auto;
-
-                    @include bootstrap.media-breakpoint-down(xl) {
-                       width: 100%;
-                        height: auto;
-
-                    }
-
+                    height: auto;
+                    width: 100%;
                 }
 
             }
@@ -47,9 +35,13 @@
                 margin-top: 0.844rem;
 
                 .title {
-                    @extend .open-sans-bold;
-                    font-size: 1.125rem;
-                    color: #1B1A1D;
+
+                    a {
+                        @extend .open-sans-bold;
+                        font-size: 1.125rem;
+                        color: #1B1A1D;
+                    }
+
                 }
 
                 .description {
@@ -70,6 +62,13 @@
         background: #4D1324;
         padding: 6.906rem 6.063rem;
         margin-top: 6.125rem;
+        overflow: hidden;
+
+        @include bootstrap.media-breakpoint-down(md) {
+            padding: 1rem;
+            text-align: center;
+        }
+
 
         .inner-wrapper {
             position: relative;
@@ -80,12 +79,20 @@
                 font-size: 3rem;
                 color: #fff;
 
+                @include bootstrap.media-breakpoint-only(xs) {
+                    font-size: 2.25rem;
+                }
+
             }
 
             .button-wrapper {
                 margin-top: 2.063rem;
 
                 .btn {
+
+                    @include bootstrap.media-breakpoint-only(xs) {
+                        width: 100%;
+                    }
 
                 }
 
@@ -98,6 +105,15 @@
             z-index: 1;
             bottom: 0;
             right: 6.75rem;
+
+            @include bootstrap.media-breakpoint-down(xl) {
+                right: -6.3rem;
+            }
+
+            @include bootstrap.media-breakpoint-down(lg) {
+                display: none;
+            }
+
 
             img {
 
