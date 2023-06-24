@@ -1,4 +1,5 @@
 @use "fonts";
+@use "bootstrap";
 
 .section7 {
 
@@ -11,12 +12,22 @@
                 display: flex;
                 flex-direction: row;
 
+                @include bootstrap.media-breakpoint-down(xl) {
+                    flex-direction: column;
+                    justify-content: center;
+                }
+
                 .video {
                     max-width: 35rem;
                     width: 100%;
                     flex: 1 0 auto;
                     border-radius: 0.25rem;
                     overflow: hidden;
+
+                    @include bootstrap.media-breakpoint-down(xl) {
+                        align-self: center;
+                    }
+
                 }
 
                 .content-wrapper {
@@ -24,6 +35,11 @@
                     justify-content: center;
                     align-items: center;
                     padding: 0 4.344rem;
+
+                    @include bootstrap.media-breakpoint-down(xl) {
+                        padding: 0;
+                        margin-top: 1rem;
+                    }
 
                     .content-inner {
                         max-width: 43.75rem;
@@ -33,11 +49,25 @@
                             display: flex;
                             align-items: center;
 
+                            @include bootstrap.media-breakpoint-down(xl) {
+                                justify-content: center;
+                            }
+
+                            @include bootstrap.media-breakpoint-down(md) {
+                                flex-direction: column;
+                            }
+
                             .name {
                                 color: #74767E;
                                 font-size: 1.094rem;
                                 border-right: #C5C6C9 solid 0.063rem;
                                 padding-right: 0.563rem;
+
+                                @include bootstrap.media-breakpoint-down(md) {
+                                    border: none;
+                                    padding-right: 0;
+                                }
+
                             }
 
                             .company {
@@ -48,6 +78,11 @@
                                     width: 0.813rem;
                                     height: auto;
                                     margin-left: 0.75rem;
+
+                                    @include bootstrap.media-breakpoint-down(md) {
+                                        margin-left: 0;
+                                    }
+
                                 }
 
                                 span {
@@ -66,6 +101,16 @@
                             font-size: 1.875rem;
                             line-height: 2.781rem;
                             margin-top: 1.687rem;
+
+                            @include bootstrap.media-breakpoint-down(xl) {
+                                text-align: center;
+                            }
+
+                            @include bootstrap.media-breakpoint-down(md) {
+                                font-size: 1.40625rem;
+                                line-height: 1.5;
+                            }
+
                         }
 
                     }
@@ -84,6 +129,10 @@
         margin-top: 6rem;
         position: relative;
         overflow: hidden;
+
+        @include bootstrap.media-breakpoint-only(xs) {
+            padding: 1rem;
+        }
 
         .content-wrapper {
             color: #fff;
@@ -113,6 +162,11 @@
 
                 .btn {
                     color: #456EE6;
+
+                    @include bootstrap.media-breakpoint-only(xs) {
+                        width: 100%;
+                    }
+
                 }
 
             }
@@ -125,6 +179,18 @@
             right: 0;
             top: 0;
             height: 100%;
+
+            @include bootstrap.media-breakpoint-only(lg) {
+                right: -15rem;
+            }
+
+            @include bootstrap.media-breakpoint-only(md) {
+                right: -29rem;
+            }
+
+            @include bootstrap.media-breakpoint-down(md) {
+                display: none;
+            }
 
             img {
                 height: 100%;

@@ -21,6 +21,12 @@
         top: 50%;
         z-index: 5;
         left: -1.5625rem;
+        transform: translate(0, -50%);
+
+        @media (max-width: 89.5rem) {
+            left: 1rem;
+        }
+
     }
 
     &.right {
@@ -28,6 +34,12 @@
         top: 50%;
         z-index: 5;
         right: -1.5625rem;
+        transform: translate(0, -50%);
+
+        @media (max-width: 89.5rem) {
+            right: 1rem;
+        }
+
     }
 
 }

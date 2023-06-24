@@ -1,3 +1,5 @@
+@use "bootstrap";
+
 .section2 {
     background: #FAFAFA;
 
@@ -13,6 +15,10 @@
             flex-direction: row;
             align-items: center;
 
+            @include bootstrap.media-breakpoint-down(md) {
+                flex-direction: column;
+            }
+
             .label {
                 flex: 1 0 auto;
                 font-size: 1.063rem;
@@ -27,10 +33,30 @@
                 justify-content: space-between;
                 margin-left: 3.688rem;
 
+                @include bootstrap.media-breakpoint-down(md) {
+                    margin-left: 0;
+                    margin-top: 1rem;
+                    align-items: center;
+                    margin-top: 1rem;
+                    margin-left: 0;
+                }
+
+                @include bootstrap.media-breakpoint-only(xs) {
+                    height: 1.797rem;
+                }
 
                 img {
                     height: 100%;
                     width: auto;
+
+                    @include bootstrap.media-breakpoint-down(md) {
+                        margin-left: 1rem;
+
+                        &:first-child {
+                            margin-left: 0;
+                        }
+
+                    }
                 }
 
             }

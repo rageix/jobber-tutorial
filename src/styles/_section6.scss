@@ -1,7 +1,8 @@
 @use "fonts";
+@use "bootstrap";
 
 .section6 {
-background: #0D084D;
+    background: #0D084D;
 
     .column-wrapper {
         display: flex;
@@ -9,6 +10,10 @@ background: #0D084D;
 
         .left {
             width: 50%;
+
+            @include bootstrap.media-breakpoint-down(lg) {
+                width: 100%;
+            }
 
             .business-logo {
                 display: flex;
@@ -43,7 +48,8 @@ background: #0D084D;
                 color: #fff;
                 font-size: 1.094rem;
                 line-height: 1.594rem;
-                width: 25.938rem;
+                max-width: 25.938rem;
+                width: 100%;
                 margin-top: 1.657rem;
             }
 
@@ -73,12 +79,25 @@ background: #0D084D;
 
             .button-wrapper {
                 margin-top: 3.75rem;
+
+                .btn {
+
+                    @include bootstrap.media-breakpoint-only(xs) {
+                        width: 100%;
+                    }
+
+                }
+
             }
 
         }
 
         .right {
             width: 50%;
+
+            @include bootstrap.media-breakpoint-down(lg) {
+                display: none;
+            }
 
             img {
                 border-radius: 0.25rem;

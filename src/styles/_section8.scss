@@ -11,6 +11,12 @@
             display: flex;
             justify-content: space-between;
 
+
+            @media (max-width: 85.625rem) {
+                overflow-x: clip;
+                overflow-y: visible;
+            }
+
             .item {
                 position: relative;
                 min-height: 19.531rem;

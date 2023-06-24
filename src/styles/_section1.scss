@@ -1,3 +1,5 @@
+@use "bootstrap";
+
 .section1 {
     background: #1B1A1D;
 
@@ -43,6 +45,14 @@
         align-items: center;
         position: relative;
 
+        @include bootstrap.media-breakpoint-down(xl) {
+            justify-content: center;
+        }
+
+        @include bootstrap.media-breakpoint-down(md) {
+            height: 28.96875rem;
+        }
+
         .content-wrapper {
             max-width: 40.688rem;
             display: flex;
@@ -50,12 +60,31 @@
             flex: 1 0 auto;
             position: relative;
             z-index: 2;
+            width: 100%;
 
             .tag-line {
                 font-size: 2.875rem;
                 max-width: 35.938rem;
                 line-height: 3.719rem;
                 color: #fff;
+                width: 100%;
+
+                @include bootstrap.media-breakpoint-down(xl) {
+                    margin: 0 auto;
+                    text-align: center;
+                }
+
+                @include bootstrap.media-breakpoint-down(md) {
+                    margin: 0 auto;
+                    text-align: center;
+                    font-size: 2.15625rem;
+                    max-width: 26.875rem;
+                }
+
+                @include bootstrap.media-breakpoint-only(xs) {
+                    max-width: 18.5rem;
+                }
+
             }
 
             .search-box {
@@ -102,6 +131,23 @@
 
             }
 
+            .popular-mobile {
+                margin-top: 1rem;
+
+                .dropdown {
+
+                    button {
+
+                        @include bootstrap.media-breakpoint-only(xs) {
+                            width: 100%;
+                        }
+
+                    }
+
+                }
+
+            }
+
         }
 
         .image-wrapper {
@@ -109,6 +155,11 @@
             right: 3.75rem;
             bottom: 0;
             z-index: 1;
+
+            @include bootstrap.media-breakpoint-down(xl) {
+                display: none;
+            }
+
         }
 
     }

@@ -13,7 +13,7 @@
                 <div class="logo">
                     <img data-src="/images/logo.svg" class="lazyload"/>
                 </div>
-                <div class="menu">
+                <div class="menu d-none d-md-block">
                     <a href="#" class="btn btn-link">Explore</a>
                     <a href="#" class="btn btn-link"><!--
                         --><i class="fa-sharp fa-solid fa-earth-americas"></i><!--
@@ -21,6 +21,23 @@
                     <a href="#" class="btn btn-link">Become a Seller</a>
                     <a href="#" class="btn btn-link">Sign in</a>
                     <a href="#" class="btn btn-outline-light">Join</a>
+                </div>
+                <div class="mobile-menu d-md-none">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-light dropdown-toggle"
+                                type="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Explore</a></li>
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Become a Seller</a></li>
+                            <li><a class="dropdown-item" href="#">Sign in</a></li>
+                            <li><a class="dropdown-item" href="#">Join</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="bottom">
@@ -40,12 +57,28 @@
                                     id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
                         </div>
                     </div>
-                    <div class="popular">
+                    <div class="popular d-none d-md-block">
                         <span>Popular:</span>
                         <a href="#" class="btn btn-outline-light">Website Design</a>
                         <a href="#" class="btn btn-outline-light">Logo Design</a>
                         <a href="#" class="btn btn-outline-light">Vocal Work</a>
                         <a href="#" class="btn btn-outline-light">AI Art</a>
+                    </div>
+                    <div class="popular-mobile d-md-none">
+                        <div class="dropdown">
+                            <button class="btn btn-outline-light dropdown-toggle"
+                                    type="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                Popular
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Website Design</a></li>
+                                <li><a class="dropdown-item" href="#">Logo Design</a></li>
+                                <li><a class="dropdown-item" href="#">Vocal Work</a></li>
+                                <li><a class="dropdown-item" href="#">AI Art</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="image-wrapper">

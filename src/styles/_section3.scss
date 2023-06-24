@@ -9,6 +9,7 @@
         .carousel-items {
             display: flex;
             justify-content: space-between;
+            overflow: hidden;
 
             .item {
                 position: relative;
