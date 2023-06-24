@@ -4,24 +4,32 @@
 .section9 {
 
     .item-wrapper {
-        margin-top: 1.688rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        flex-wrap: wrap;
+        margin: 0 -0.75rem;
+
+        @include bootstrap.media-breakpoint-down(lg) {
+            flex-wrap: wrap;
+        }
 
         .item {
+            margin-top: 1.688rem;
             max-width: 27.844rem;
+            width: 100%;
+            padding: 0 0.75rem;
+            flex-basis: 33.33%;
 
             @include bootstrap.media-breakpoint-down(xl) {
+                max-width: none;
+            }
+
+            @include bootstrap.media-breakpoint-down(lg) {
                 flex-basis: 50%;
-                width: 100%;
-                margin-left: 1rem;
+            }
 
-                &:first-child {
-                    margin-left: 0;
-                }
-
+            @include bootstrap.media-breakpoint-down(sm) {
+                flex-basis: 100%;
             }
 
 
@@ -29,17 +37,17 @@
                 border-radius: 0.25rem;
                 overflow: hidden;
 
-                img {
-                    height: 100%;
-                    width: auto;
-
-                    @include bootstrap.media-breakpoint-down(xl) {
-                       width: 100%;
-                        height: auto;
-
-                    }
-
-                }
+                //img {
+                //    height: 100%;
+                //    width: auto;
+                //
+                //    @include bootstrap.media-breakpoint-down(xl) {
+                //        width: 100%;
+                //        height: auto;
+                //
+                //    }
+                //
+                //}
 
             }
 
